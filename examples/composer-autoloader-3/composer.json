@@ -1,0 +1,6 @@
+{
+	"name": "phpunit-testing-starter/example-composer-autoloader-3",
+	"autoload": {
+		"classmap": ["lib/validation/", "lib/", "lib/pdf/"]
+	}
+}

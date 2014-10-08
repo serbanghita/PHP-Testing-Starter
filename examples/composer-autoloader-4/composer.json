@@ -1,0 +1,6 @@
+{
+	"name": "phpunit-testing-starter/example-composer-autoloader-4",
+	"require": {
+		"mailchimp/mailchimp": "2.0.*"
+	}
+}

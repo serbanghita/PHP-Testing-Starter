@@ -1,0 +1,6 @@
+[submodule "plugins/Eclipse"]
+	path = plugins/Eclipse
+	url = git@github.com:bogdananton/Eclipse-testNameGenerator.git
+[submodule "plugins/SublimeText"]
+	path = plugins/SublimeText
+	url = git@github.com:bogdananton/Sublime-testNameGenerator.git
