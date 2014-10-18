@@ -3,9 +3,6 @@
 	"keywords": ["phpunit", "examples"],
 	"homepage": "https://github.com/bogdananton/PHP-Testing-Starter",
 	"license": "MIT",
-	"require": {
-		"phpunit/phpunit": "*"
-	},
 	"autoload": {
 		"classmap": ["src/", "src/app/"]
 	}

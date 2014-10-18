@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit
+    backupStaticAttributes="true"
 	strict="true"
 	colors="true"
 	bootstrap="vendor/autoload.php">
@@ -10,8 +11,16 @@
 		<ini name="memory_limit" value="512M"/>
 	</php>
 
-	<testsuite name="db">
-		<directory suffix="Test.php">tests/</directory>
-		<file>tests/core/Helpers/toUppercaseTest.php</file>
-	</testsuite>
+	<testsuites>
+		<testsuite name="all">
+			<directory suffix="Test.php">tests/</directory>
+		</testsuite>
+
+		<testsuite name="core">
+			<file>tests/core/CoreAbstract/getConfigTest.php</file>
+			<file>tests/core/CoreAbstract/setConfigTest.php</file>
+			<file>tests/core/CoreAbstract/getConfig2Test.php</file>
+			<file>tests/core/CoreAbstract/setConfig2Test.php</file>
+		</testsuite>
+	</testsuites>
 </phpunit>
