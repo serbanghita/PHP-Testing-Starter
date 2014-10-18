@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+	strict="true"
+	colors="true"
+	bootstrap="tests/bootstrap.php">
+
+	<testsuite name="all">
+		<directory suffix="Test.php">./</directory>
+	</testsuite>
+
+	<php>
+		<ini name="error_reporting" value="-1"/>
+		<ini name="memory_limit" value="512M"/>
+	</php>
+</phpunit>
