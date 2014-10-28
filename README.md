@@ -6,9 +6,6 @@
 * [Configuration](https://github.com/bogdananton/PHP-Testing-Starter/wiki/PHPUnit-Configuration)
 * [Test Suites](https://github.com/bogdananton/PHP-Testing-Starter/wiki/PHPUnit-Test-Suites)
 * [Coverage](https://github.com/bogdananton/PHP-Testing-Starter/wiki/PHPUnit-Coverage-and-logging)
-* [Logging - testdox](https://github.com/bogdananton/PHP-Testing-Starter/wiki/PHPUnit:-Logging---testdox)
-* [Logging - HTML](https://github.com/bogdananton/PHP-Testing-Starter/wiki/PHPUnit:-Logging---HTML)
-* [Logging - Clover](https://github.com/bogdananton/PHP-Testing-Starter/wiki/PHPUnit:-Logging---Clover)
 
 **Writing unit tests**
 * [Getting Started](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Unit-tests:-Getting-Started)
@@ -32,3 +29,5 @@
 **Workflow:**
 * [Running Tests in loop](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Workflow:-Running-Tests-in-loop)
 * [Composer](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Composer-autoloader)
+
+[Glossary / Quick Reference](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Glossary)
