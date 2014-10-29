@@ -9,7 +9,7 @@
 
 **Writing unit tests**
 * [Getting Started](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Unit-tests:-Getting-Started)
-* [Testing protected & private methods](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Unit-tests:-Test-private-&-protected-attributes)
+* [Testing protected & private methods](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Unit-tests:-Test-private-&-protected-methods)
 * [Reading and writing private and protected attributes](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Unit-tests:-Reading-and-writing-private-and-protected-attributes)
 * [Data Providers](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Unit-tests:-Data-Providers)
 * [Exceptions](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Unit-tests:-Exceptions)
