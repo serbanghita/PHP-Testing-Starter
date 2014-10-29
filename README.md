@@ -29,5 +29,6 @@
 **Workflow:**
 * [Running Tests in loop](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Workflow:-Running-Tests-in-loop)
 * [Composer](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Composer-autoloader)
+* [Tips](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Workflow:-Tips)
 
 [Glossary / Quick Reference](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Glossary)
