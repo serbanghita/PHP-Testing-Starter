@@ -4,3 +4,9 @@
 [submodule "plugins/SublimeText"]
 	path = plugins/SublimeText
 	url = git@github.com:bogdananton/Sublime-testNameGenerator.git
+[submodule "utils/PHP-CodeGraph"]
+	path = utils/PHP-CodeGraph
+	url = https://github.com/bogdananton/PHP-CodeGraph
+[submodule "utils/PHPUnit-TestFiles-Generator"]
+	path = utils/PHPUnit-TestFiles-Generator
+	url = https://github.com/bogdananton/PHPUnit-TestFiles-Generator
