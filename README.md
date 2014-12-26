@@ -22,7 +22,7 @@ It should look similar to:
  |  |- [+] providers
  |  |- [+] lib
  |  |   \- [+] FirstClass
- |  |       |- [firstMethodTest.php]
+ |  |       |- firstMethodTest.php
  |  |       |- secondMethodTest.php
  |  |       \- constructorTest.php
  |  |
