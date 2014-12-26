@@ -1,9 +1,0 @@
-{
-	"name": "bogdananton/PHP-Testing-Starter",
-	"keywords": ["phpunit", "examples"],
-	"homepage": "https://github.com/bogdananton/PHP-Testing-Starter",
-	"license": "MIT",
-	"autoload": {
-		"classmap": ["src/", "src/app/"]
-	}
-}

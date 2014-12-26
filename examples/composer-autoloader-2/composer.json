@@ -1,6 +1,0 @@
-{
-	"name": "phpunit-testing-starter/example-composer-autoloader-2",
-	"autoload": {
-		"classmap": ["src/"]
-	}
-}

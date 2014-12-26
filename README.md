@@ -1,34 +1,134 @@
-**Environment Setup**
-* [Linux](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Environment-Setup-(Linux-version))
-* [Windows](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Environment-Setup-(Windows-version))
+# PHP Testing Starter
+> Step by step tutorial for developers that want to start testing their web applications.
 
-**PHPUnit Setup**
-* [Configuration](https://github.com/bogdananton/PHP-Testing-Starter/wiki/PHPUnit-Configuration)
-* [Test Suites](https://github.com/bogdananton/PHP-Testing-Starter/wiki/PHPUnit-Test-Suites)
-* [Coverage](https://github.com/bogdananton/PHP-Testing-Starter/wiki/PHPUnit-Coverage-and-logging)
+This is a step by step tutorial that should help you start testing your PHP application. The goal of this document is ment to:
 
-**Writing unit tests**
-* [Getting Started](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Unit-tests:-Getting-Started)
-* [Testing protected & private methods](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Unit-tests:-Test-private-&-protected-methods)
-* [Reading and writing private and protected attributes](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Unit-tests:-Reading-and-writing-private-and-protected-attributes)
-* [Data Providers](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Unit-tests:-Data-Providers)
-* [Exceptions](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Unit-tests:-Exceptions)
-* [Making the code testable](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Unit-tests:-Making-the-code-testable)
-* [Mocks and stubs](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Unit-tests:-Mocks-and-stubs)
+  - Provide you with a **reliable resource** to start testing your PHP code.
+  - Provide you with **quick copy-paste** code references.
+  - Let you **focus on the important aspects** like writing unit tests.
 
-**Jenkins CI**
-* [Quick starter guide](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Jenkins:-Quick-starter-guide)
-* [Coverage reports](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Jenkins:-Coverage-reports)
+### Initial set-up
 
-**Writing automated tests using Selenium**
-* [Setting up Selenium](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Selenium:-Setting-up)
-* [Log reports and printscreens](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Selenium:-Log-reports-and-printscreens)
-* [Working with browsers](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Selenium:-Working-with-browsers)
-* [Working with headless browsers](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Selenium:-Working-with-headless-browsers)
+Create your project folder structure. If this is a **new project**, you can use dummy files and classes first and replace them later.
+It should look similar to:
 
-**Workflow:**
-* [Running Tests in loop](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Workflow:-Running-Tests-in-loop)
-* [Composer](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Composer-autoloader)
-* [Tips](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Workflow:-Tips)
+```
+ |-[+] lib
+ |   |- FirstClass.php
+ |   \- SecondClass.php
+ |
+ |-[+] tests
+ |  |- [+] fixtures
+ |  |- [+] providers
+ |  |- [+] lib
+ |  |   \- [+] FirstClass
+ |  |       |- [firstMethodTest.php]
+ |  |       |- secondMethodTest.php
+ |  |       \- constructorTest.php
+ |  |
+ |  |- phpunit.xml
+ |  \- bootstrap.php
+ |
+ |- .gitignore
+ \- composer.json
+```
 
-[Glossary / Quick Reference](https://github.com/bogdananton/PHP-Testing-Starter/wiki/Glossary)
+### Files and folders explained
+
+Our pet PHP project is called `MyProject`. This could also be the main folder where our current files are residing.
+
+`lib/` is the folder that contains **all your classes** and main logic. You will find this folder in other projects also named: `src`, `source` or similar. The main reason why you should keep everything in one folder (subfoldes) is namespacing your project.
+
+`FirstClass.php` is one of your classes.
+
+```php
+namespace MyProject;
+
+class FirstClass
+{
+}
+```
+
+`tests/` is the folder containing all your tests and other useful files needed during the testing. In other projects you can find this folder named as `test/`.
+
+`tests/fixtures/` and `tests/providers/` can contain static data needed for some specific tests. You can ignore these for now.
+
+`tests/lib/FirstClass/` is a the folder containing all the test files for `FirstClass` class. In other project this is just a file (e.g. `FirstClassTest.php`), but you will see later why is better to be a folder. This is entirely up to you and your project.
+
+`tests/lib/FirstClass/*Test.php` are files specific to each method inside the `FirstClass` class.
+
+`tests/phpunit.xml` is the file with the main PHPUnit configurations. By convention this is stored in an xml file so you don't have to repeat the same commands when running your PHPUnit tests.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+        colors="true"
+        verbose="false"
+        bootstrap="bootstrap.php"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        strict="true">
+
+    <testsuite name="All tests">
+        <directory suffix="Test.php">lib</directory>
+    </testsuite>
+</phpunit>
+```
+
+`tests/bootstrap.php` is a file used by the PHPUnit to start your tests. You can put here various global settings. This is the place where to initiate the **autoloader** for your test files.
+
+```php
+<?php
+$composer = dirname(__FILE__) . '/../vendor/autoload.php';
+if (!file_exists($composer)) {
+    throw new \RuntimeException("Please run 'composer install' first to set up autoloading. $composer");
+}
+
+/**
+ * @var \Composer\Autoload\ClassLoader $autoloader
+ */
+$autoloader = include_once $composer;
+$autoloader->add('MyProjectTest\\', dirname(__FILE__) . '/tests/lib/');
+```
+
+`MyProjectTest` is the namespace where we will keep our tests. The final line of code is optional if you already configured in in `composer.json`. If you're using your own **autoloader** then you must include it.
+
+`.gitignore` is a file that contains all the directories and files that will be excluded from Git commits.
+
+```
+composer.lock
+vendor/
+composer.phar
+phpunit.phar
+```
+
+Finally, `composer.json` is the configuration file for composer. The `require-dev` and `autoload` keys are very important for our project to work.
+
+```json
+{
+  "name": "yourname/MyProject",
+  "type": "library",
+  "description": "A demo project.",
+  "keywords": ["project", "demo", "php project"],
+  "homepage": "https://github.com/yourname/MyProject",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "MyProject\\": "lib/",
+      "MyProjectTest\\": "tests/lib/"
+    }
+  }
+}
+```
+
+### Downloading needed tools
+
+
+[firstMethodTest.php]:http://serban.ghita.org/

@@ -1,6 +1,0 @@
-{
-	"name": "phpunit-testing-starter/writing-testable-code-1",
-	"autoload": {
-		"classmap": ["lib/"]
-	}
-}
