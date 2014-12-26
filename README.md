@@ -7,6 +7,27 @@ This is a step by step tutorial that should help you start testing your PHP appl
   - Provide you with **quick copy-paste** code references.
   - Let you **focus on the important aspects** like writing unit tests.
 
+# Summary
+
+**Chapter 1** (Setting up your project)
+ * [Initial set-up](#initial-set-up)
+ * Files and folders explained
+ * Downloading needed tools
+ * Running the first test
+
+**Chapter 2** (Testing)
+ * Testing by stubbing methods
+ * Testing by mocking methods
+ 
+**Chapter 3** (Testing special cases)
+ * Testing `protected` and `private` methods
+ * Reading and writing `protected` and `private` attributes
+ * Testing methods using data providers
+
+**Chapter 4** (Code optimizations)
+* Making your code testable
+* Group tests by test suites
+
 ### Initial set-up
 
 Create your project folder structure. If this is a **new project**, you can use dummy files and classes first and replace them later.
