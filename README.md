@@ -56,7 +56,7 @@ It should look similar to:
 
 ### Files and folders explained
 
-Our pet PHP project is called `MyProject`. This could also be the main folder where our current files are residing.
+Our pet PHP project is called `MyProject`. Remember this, because it's the only fixed notion about this tutorial. We assume that all our files are under a single folder called `MyProject` and `MyProject/lib/` is mapped to `\MyProject` unique namespace.
 
 `lib/` is the folder that contains **all your classes** and main logic. You will find this folder in other projects also named: `src`, `source` or similar. The main reason why you should keep everything in one folder (subfoldes) is namespacing your project.
 
