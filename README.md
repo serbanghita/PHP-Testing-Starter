@@ -11,9 +11,9 @@ This is a step by step tutorial that should help you start testing your PHP appl
 
 **Chapter 1** (Setting up your project)
  * [Initial set-up](#initial-set-up)
- * Files and folders explained
- * Downloading needed tools
- * Running the first test
+ * [Files and folders explained](#files-and-folders-explained)
+ * [Downloading needed tools](#downloading-needed-tools)
+ * [Running the first test](#running-the-first-test)
 
 **Chapter 2** (Testing)
  * Testing by stubbing methods
