@@ -107,7 +107,7 @@ Finally, `composer.json` is the configuration file for composer. The `require-de
 
 ```json
 {
-  "name": "yourname/MyProject",
+  "name": "yourname/myproject",
   "type": "library",
   "description": "A demo project.",
   "keywords": ["project", "demo", "php project"],
@@ -130,5 +130,35 @@ Finally, `composer.json` is the configuration file for composer. The `require-de
 
 ### Downloading needed tools
 
+1. Download latest snapshot of [composer.phar]. Put it in your project's root or make it available global.
+2. Download latest [phpunit.phar]. Same as above.
 
-[firstMethodTest.php]:http://serban.ghita.org/
+### Running the first test
+
+```sh
+cd MyProject/
+php composer.phar diag
+```
+
+You should be *OK* at this point. If you see any problems here, consult the [possible composer issues] subsection.
+
+```sh
+php composer.phar install
+php phpunit.phar -c tests/phpunit.xml
+```
+
+The output should be:
+
+```text
+PHPUnit 4.4.0 by Sebastian Bergmann.
+Configuration read from /path/to/MyProject/tests/phpunit.xml
+.
+Time: 244 ms, Memory: 3.75Mb
+OK (1 test, 1 assertion)
+```
+
+Congratulations! If you made it this far then you might as well think about starring this project and support us.
+
+[composer.phar]:https://getcomposer.org/composer.phar
+[phpunit.phar]:https://phar.phpunit.de/phpunit.phar
+[possible composer issues]:#aaa
