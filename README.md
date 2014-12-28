@@ -17,12 +17,13 @@ This is a step by step tutorial that should help you start testing your PHP appl
 
 **Chapter 2** - _Start testing_
  * Testing by stubbing methods
- * Testing by mocking methods
+ * Testing by mocking objects
  
 **Chapter 3** - _Testing special cases_
  * Testing `protected` and `private` methods
  * Reading and writing `protected` and `private` attributes
  * Testing methods using data providers
+ * [Testing `abstract` classes](#testing-abstract-classes)
  * Testing system specific functions
 
 **Chapter 4** - _Code optimizations_
@@ -192,3 +193,47 @@ Congratulations! If you made it this far then you might as well think about star
 [composer.phar]:https://getcomposer.org/composer.phar
 [phpunit.phar]:https://phar.phpunit.de/phpunit.phar
 [possible composer issues]:#aaa
+
+## Chapter 3
+> Testing special cases
+
+### Testing abstract classes
+
+Usually you have classes like this in your code `class Socks extends AbstractTransport implements TransportInterface`. While in `Socks` class you're confronted with concrete `public`, `protected` and `private` methods in an abstract class declaration like `AbstractTransport` you can also have `abstract` methods.
+
+Abstract methods have no implmenentation hence they will be tested in the class that implements that `abstract` class (e.g. `Socks`). So why are we talking about abstract classes and methods? Because `abstract` classes can have concrete methods implementations and that should be tested!
+
+Let's take an example of `abstract` class declaration and try to test `setPort` and `getPort` signature methods.
+
+```php
+abstract class AbstractTransport
+{
+  protected $port;
+  
+  public function setPort($port)
+  {
+    $this->port = (int)$port;
+  }
+  
+  public function getPort()
+  {
+    return $this->port;
+  }
+}
+```
+
+Here is how you can test both concrete methods from the `abstract` class `AbstractTransport`:
+
+```php
+    /**
+     * set port sets the desired port
+     */
+    public function testSetPortSetsTheDesiredPort()
+    {
+        $inputPort = 8080;
+        $mock = $this->getMockForAbstractClass('\MyProject\Transport\AbstractTransport');
+        $mock->setPort($inputPort);
+
+        $this->assertEquals($inputPort, $mock->getPort());
+    }
+```
