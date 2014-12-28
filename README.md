@@ -25,6 +25,7 @@ This is a step by step tutorial that should help you start testing your PHP appl
  * Testing methods using data providers
  * [Testing `abstract` classes](#testing-abstract-classes)
  * Testing system specific functions
+ * Testing `Exceptions` and errors
 
 **Chapter 4** - _Code optimizations_
  * Making your code testable
