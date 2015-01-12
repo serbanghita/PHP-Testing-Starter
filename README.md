@@ -7,6 +7,13 @@ This is a step by step tutorial that should help you start testing your PHP appl
   - Provide you with **quick copy-paste** code references.
   - Let you **focus on the important aspects** like writing unit tests.
 
+## Contributing
+
+If you want to contribute to this book, here are a couple of rules to which we adhere:
+ * KISS (Keep it simple, stupid) when providing examples and case-studies.
+ * When providing code examples use the conventions that already exists in this book.
+ * Try to provide real world testing scenarios.
+
 ## Summary
 
 **Chapter 1** - _Setting up your project_
