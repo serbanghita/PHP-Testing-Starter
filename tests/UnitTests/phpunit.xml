@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+        colors="true"
+        verbose="false"
+        bootstrap="bootstrap.php"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        stopOnError="true"
+        stopOnFailure="true">
+
+    <testsuite name="UnitTests">
+        <directory suffix="Test.php">.</directory>
+    </testsuite>
+    <testsuite name="AbstractTest">
+        <directory suffix="Test.php">./AbstractTest/</directory>
+    </testsuite>
+</phpunit>
