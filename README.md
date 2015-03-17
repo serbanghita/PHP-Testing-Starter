@@ -24,6 +24,10 @@ If you want to contribute to this book, here are a couple of rules to which we a
 
 **Chapter 2** - _Start testing_
  * Testing by stubbing methods
+ * Methods of mocking
+    * With PHPUnit
+    * With `extends` via fixtures
+    * With Mockery
  * Testing by mocking objects
  
 **Chapter 3** - _Testing special cases_
