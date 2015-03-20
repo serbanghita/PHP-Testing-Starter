@@ -37,6 +37,7 @@ If you want to contribute to this book, here are a couple of rules to which we a
  * [Testing `abstract` classes](#testing-abstract-classes)
  * Testing system specific functions
  * Testing `Exceptions` and errors
+ * Testing a `Fluent` class
 
 **Chapter 4** - _Code optimizations_
  * Making your code testable
