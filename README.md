@@ -40,6 +40,7 @@ If you want to contribute to this book, here are a couple of rules to which we a
  * Testing a `Fluent` class
 
 **Chapter 4** - _Code optimizations_
+ * Naming conventions for tests
  * Making your code testable
  * Group tests by test suites
 
