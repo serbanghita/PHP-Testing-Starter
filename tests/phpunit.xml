@@ -15,4 +15,11 @@
     <testsuite name="AbstractTest">
         <directory suffix="Test.php">./AbstractTest/</directory>
     </testsuite>
+    <testsuite name="ExceptionsTest">
+        <directory suffix="Test.php">./ExceptionsTest/</directory>
+    </testsuite>
+
+    <logging>
+        <log type="coverage-html" target="../coverage"/>
+    </logging>
 </phpunit>

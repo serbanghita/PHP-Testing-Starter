@@ -14,9 +14,3 @@ abstract class AbstractTransport implements TransportInterface
         return $this->port;
     }
 }
-
-interface TransportInterface
-{
-    public function setPort($port);
-    public function getPort();
-}
