@@ -18,6 +18,9 @@
     <testsuite name="ExceptionsTest">
         <directory suffix="Test.php">./ExceptionsTest/</directory>
     </testsuite>
+    <testsuite name="DependsTest">
+        <directory suffix="Test.php">./DependsTest/</directory>
+    </testsuite>
 
     <logging>
         <log type="coverage-html" target="../coverage"/>

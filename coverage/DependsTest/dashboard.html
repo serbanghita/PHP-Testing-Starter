@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Dashboard for G:\webserver\www\git\test\PHP-Testing-Starter\tests/AbstractTest</title>
+  <title>Dashboard for G:\webserver\www\git\test\PHP-Testing-Starter\tests/DependsTest</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/nv.d3.css" rel="stylesheet">
@@ -19,7 +19,7 @@
      <div class="col-md-12">
       <ol class="breadcrumb">
         <li><a href="../index.html">G:\webserver\www\git\test\PHP-Testing-Starter\tests</a></li>
-        <li><a href="index.html">AbstractTest</a></li>
+        <li><a href="index.html">DependsTest</a></li>
         <li class="active">(Dashboard)</li>
 
       </ol>
@@ -176,7 +176,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#methodCoverageDistribution svg')
-      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,0,2], "Method Coverage"))
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,0,0,5], "Method Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -227,7 +227,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Cyclomatic Complexity');
 
     d3.select('#classComplexity svg')
-      .datum(getComplexityData([[100,2,"<a href=\"AbstractTransport.php.html#4\">AbstractTransport<\/a>"]], 'Class Complexity'))
+      .datum(getComplexityData([[100,7,"<a href=\"Products.php.html#4\">Products<\/a>"]], 'Class Complexity'))
       .transition()
       .duration(500)
       .call(chart);
@@ -252,7 +252,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Method Complexity');
 
     d3.select('#methodComplexity svg')
-      .datum(getComplexityData([[100,1,"<a href=\"AbstractTransport.php.html#8\">AbstractTransport::setPort<\/a>"],[100,1,"<a href=\"AbstractTransport.php.html#12\">AbstractTransport::getPort<\/a>"]], 'Method Complexity'))
+      .datum(getComplexityData([[100,1,"<a href=\"Products.php.html#6\">Products::__construct<\/a>"],[100,1,"<a href=\"Products.php.html#11\">Products::add<\/a>"],[100,1,"<a href=\"Products.php.html#16\">Products::remove<\/a>"],[100,3,"<a href=\"Products.php.html#21\">Products::get<\/a>"],[100,1,"<a href=\"Products.php.html#29\">Products::getAll<\/a>"]], 'Method Complexity'))
       .transition()
       .duration(500)
       .call(chart);
