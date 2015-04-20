@@ -1,5 +1,5 @@
 <?php
-use UnitTests\DependsTest\Products;
+namespace UnitTests\DependsTest;
 
 class ProductsTest extends \PHPUnit_Framework_TestCase
 {
@@ -22,7 +22,7 @@ class ProductsTest extends \PHPUnit_Framework_TestCase
     /**
      * adding a new product to the existing products array is returned by get method
      * @depends testSettingAValidArrayOfProductsFromConstructorIsReturnedByGetAllMethod
-     * @var $products Products
+     * @param $products Products
      */
     public function testAddingANewProductToTheExistingProductsArrayIsReturnedByGetMethod($products)
     {
@@ -35,7 +35,7 @@ class ProductsTest extends \PHPUnit_Framework_TestCase
     /**
      * removing the first product from the products array is reflected by the get method
      * @depends testSettingAValidArrayOfProductsFromConstructorIsReturnedByGetAllMethod
-     * @var $products Products
+     * @param $products Products
      */
     public function testRemovingTheFirstProductFromTheProductsArrayIsReflectedByTheGetMethod($products)
     {
@@ -47,7 +47,7 @@ class ProductsTest extends \PHPUnit_Framework_TestCase
     /**
      * getting a product by a key that no longer exists will return null
      * @depends testSettingAValidArrayOfProductsFromConstructorIsReturnedByGetAllMethod
-     * @var $products Products
+     * @param $products Products
      */
     public function testGettingAProductByAKeyThatNoLongerExistsWillReturnNull($products)
     {
@@ -59,7 +59,7 @@ class ProductsTest extends \PHPUnit_Framework_TestCase
      * getting a product by an empty key value will throw an exception
      * @depends testSettingAValidArrayOfProductsFromConstructorIsReturnedByGetAllMethod
      * @expectedException \InvalidArgumentException
-     * @var $products Products
+     * @param $products Products
      */
     public function testGettingAProductByAnEmptyKeyValueWillThrowAnException($products)
     {
