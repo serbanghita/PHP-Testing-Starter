@@ -70,12 +70,42 @@ If you want to contribute to this book, here are a couple of rules to which we a
 
 Create your project folder structure. If this is a **new project**, you can use dummy files and classes first and
 replace them later.
-It should look similar to:
+This is a personal preference, we've seen the following patterns used in the wild.
+
+When a project has many sub-namespaces:
+
+```
+|-[+] lib
+|  |-[+] FirstSubNamespace
+|  |  |- FirstClass.php
+|  |  |- FirstClassAbstract.php
+|  |  \- FirstClassInterface.php
+|  |
+|  |-[+] SecondSubNamespace
+|     |- FirstClass.php
+|     \- SecondClass.php
+|
+|-[+] tests
+|  |-[+] FirstSubNamespace
+|  |  |-[+] FirstClass
+|  |     |- InputTest.php
+|  |     \- RecursionTest.php
+|  |
+|  |-[+] SecondSubNamespace
+|     |-[+] FirstClass
+|     |  |- ConstructorTest.php
+|     |  |- SomeMethodTest.php
+|     |-[+] SecondClass
+|        |- ConstructorTest.php
+|        \- SomeMethodTest.php
+```
+
+When the project is a collection of classes in the root namespace:
 
 ```
  |-[+] lib
- |   |- FirstClass.php
- |   \- SecondClass.php
+ |  |- FirstClass.php
+ |  \- SecondClass.php
  |
  |-[+] tests
  |  |- [+] fixtures
@@ -91,6 +121,19 @@ It should look similar to:
  |
  |- .gitignore
  \- composer.json
+```
+
+When the project has both unit tests and integration tests:
+
+```
+|-[+] tests
+|  |-[+] unit
+|  |  |- ...
+|  |-[+] integration
+|  |  |- ...
+|  |
+|  |- phpunit-unit.xml
+|  |- phpunit-integration.xml
 ```
 
 ### Files and folders explained
@@ -314,3 +357,12 @@ with unit tests.
 [`Username`]:tests/ExceptionsTest/Username.php
 [`UsernameTest`]:tests/ExceptionsTest/UsernameTest.php
 [Domain-Driven design]:https://leanpub.com/ddd-in-php
+
+## Chapter 5
+> Show me the money!
+
+### Tools
+
+ * Nyan Cat [result printer] for PHPUnit.
+
+[result printer]:https://github.com/whatthejeff/nyancat-phpunit-resultprinter

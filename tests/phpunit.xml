@@ -24,5 +24,8 @@
 
     <logging>
         <log type="coverage-html" target="../coverage"/>
+        <log type="testdox-html" target="../testdox.html"/>
+        <log type="testdox-text" target="../testdox.txt"/>
+        <log type="coverage-clover" target="../coverage/coverage.xml"/>
     </logging>
 </phpunit>
