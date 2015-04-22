@@ -11,10 +11,10 @@ The goal of this document is meant to:
 ## Contributing
 
 If you want to contribute to this book, here are a couple of rules to which we adhere:
-    * KISS (Keep it simple, stupid) when providing examples and case-studies.
-    * When providing code examples use the conventions that already exists in this book.
-    * Try to provide real world testing scenarios.
-    * Include references when citing other external resources.
+ * KISS (Keep it simple, stupid) when providing examples and case-studies.
+ * When providing code examples use the conventions that already exists in this book.
+ * Try to provide real world testing scenarios.
+ * Include references when citing other external resources.
 
 ## Summary
 
@@ -58,9 +58,12 @@ If you want to contribute to this book, here are a couple of rules to which we a
   * Test results
     * CI, clover
   * Code line coverage (Serban)
-    * CI
-    * Motivation
-    * Reporting to others
+  * CI
+  * Motivation
+  * Reporting to others
+  * Tools
+  * Funny
+
 
 
 ## Chapter 1
@@ -366,3 +369,11 @@ with unit tests.
  * Nyan Cat [result printer] for PHPUnit.
 
 [result printer]:https://github.com/whatthejeff/nyancat-phpunit-resultprinter
+
+### Funny
+
+ * The 4-LOC µ [(mu) PHP Microframework]. Since it's really short code the author decided to [test] the mini framework with [`assert`] function from PHP.
+
+[(mu) PHP Microframework]:https://github.com/jeremeamia/mu
+[test]:https://github.com/jeremeamia/mu/blob/master/test.php
+[`assert`]:http://php.net/manual/en/function.assert.php
