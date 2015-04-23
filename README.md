@@ -339,7 +339,7 @@ variables and maintain their state across the execution of the script.
 
 ### Testing `Exceptions` and errors
 
-#### Annotations
+#### `@expectedException`
 
 Unit testing usually starts by testing the exceptions and errors. If you have a method that throws three 
 different exceptions, and you are able to reach them one-by-one by mocking and testing you are almost done.
