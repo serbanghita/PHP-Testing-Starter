@@ -361,6 +361,9 @@ with unit tests.
 [`UsernameTest`]:tests/ExceptionsTest/UsernameTest.php
 [Domain-Driven design]:https://leanpub.com/ddd-in-php
 
+When you use the annotation, PHPUnit is simply expecting the test to throw an exception, not caring at what point in the test it happened. If you're using `setExpectedException()` you can easely debug your test and know exactly which error and where was thrown.
+
+
 ## Chapter 5
 > Show me the money!
 
