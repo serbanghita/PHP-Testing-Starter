@@ -40,6 +40,10 @@ UnitTests\DependsWithProviderTest\TextFormatter
  [x] Each item from texts provider has a non empty value in the output key
  [x] Dynamic texts
 
+MyClass
+ [x] Instantiating the constructor with an empty string throws an exception
+ [x] Instantiating the constructor with a number and calling check string will throw an exception
+
 Username
  [x] Setting a valid username will return the expected username string
  [x] Setting an empty username will throw an exception
@@ -47,4 +51,8 @@ Username
  [x] Setting a long username will throw an exception
  [x] Setting a username in an invalid format will throw an exception
  [x] Setting a username in an invalid format using a provider of usernames will throw an exception
+
+UnitTests\OutputTest\Controller
+ [x] Index is outputting the expected html code for our custom user
+ [x] Output
 

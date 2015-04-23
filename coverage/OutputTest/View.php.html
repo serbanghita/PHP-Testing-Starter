@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Code Coverage for E:\webserver\www\git\test\PHP-Testing-Starter\tests/AbstractTest/AbstractTransport.php</title>
+  <title>Code Coverage for E:\webserver\www\git\test\PHP-Testing-Starter\tests/OutputTest/View.php</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/style.css" rel="stylesheet">
@@ -18,8 +18,8 @@
      <div class="col-md-12">
       <ol class="breadcrumb">
         <li><a href="../index.html">E:\webserver\www\git\test\PHP-Testing-Starter\tests</a></li>
-        <li><a href="index.html">AbstractTest</a></li>
-        <li class="active">AbstractTransport.php</li>
+        <li><a href="index.html">OutputTest</a></li>
+        <li class="active">View.php</li>
 
       </ol>
      </div>
@@ -67,11 +67,11 @@
        </div>
 </td>
       <td class="success small"><div align="right">100.00%</div></td>
-      <td class="success small"><div align="right">3&nbsp;/&nbsp;3</div></td>
+      <td class="success small"><div align="right">5&nbsp;/&nbsp;5</div></td>
      </tr>
 
      <tr>
-      <td class="success">AbstractTransport</td>
+      <td class="success">View</td>
       <td class="success big">       <div class="progress">
          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100.00" aria-valuemin="0" aria-valuemax="100" style="width: 100.00%">
            <span class="sr-only">100.00% covered (success)</span>
@@ -96,11 +96,11 @@
        </div>
 </td>
       <td class="success small"><div align="right">100.00%</div></td>
-      <td class="success small"><div align="right">3&nbsp;/&nbsp;3</div></td>
+      <td class="success small"><div align="right">5&nbsp;/&nbsp;5</div></td>
      </tr>
 
      <tr>
-      <td class="success" colspan="4">&nbsp;<a href="#8">setPort($port)</a></td>
+      <td class="success" colspan="4">&nbsp;<a href="#8">assign($name, $value)</a></td>
       <td class="success big">       <div class="progress">
          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100.00" aria-valuemin="0" aria-valuemax="100" style="width: 100.00%">
            <span class="sr-only">100.00% covered (success)</span>
@@ -121,7 +121,7 @@
      </tr>
 
      <tr>
-      <td class="success" colspan="4">&nbsp;<a href="#12">getPort()</a></td>
+      <td class="success" colspan="4">&nbsp;<a href="#13">render($template)</a></td>
       <td class="success big">       <div class="progress">
          <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100.00" aria-valuemin="0" aria-valuemax="100" style="width: 100.00%">
            <span class="sr-only">100.00% covered (success)</span>
@@ -138,7 +138,7 @@
        </div>
 </td>
       <td class="success small"><div align="right">100.00%</div></td>
-      <td class="success small"><div align="right">1&nbsp;/&nbsp;1</div></td>
+      <td class="success small"><div align="right">3&nbsp;/&nbsp;3</div></td>
      </tr>
 
 
@@ -147,21 +147,23 @@
    <table id="code" class="table table-borderless table-condensed">
     <tbody>
      <tr><td><div align="right"><a name="1"></a><a href="#1">1</a></div></td><td class="codeLine"><span class="default">&lt;?php</span></td></tr>
-     <tr><td><div align="right"><a name="2"></a><a href="#2">2</a></div></td><td class="codeLine"><span class="keyword">namespace</span><span class="default">&nbsp;</span><span class="default">UnitTests</span><span class="default">\</span><span class="default">AbstractTest</span><span class="keyword">;</span></td></tr>
+     <tr><td><div align="right"><a name="2"></a><a href="#2">2</a></div></td><td class="codeLine"><span class="keyword">namespace</span><span class="default">&nbsp;</span><span class="default">UnitTests</span><span class="default">\</span><span class="default">OutputTest</span><span class="keyword">;</span></td></tr>
      <tr><td><div align="right"><a name="3"></a><a href="#3">3</a></div></td><td class="codeLine"></td></tr>
-     <tr><td><div align="right"><a name="4"></a><a href="#4">4</a></div></td><td class="codeLine"><span class="keyword">abstract</span><span class="default">&nbsp;</span><span class="keyword">class</span><span class="default">&nbsp;</span><span class="default">AbstractTransport</span><span class="default">&nbsp;</span><span class="keyword">implements</span><span class="default">&nbsp;</span><span class="default">TransportInterface</span></td></tr>
+     <tr><td><div align="right"><a name="4"></a><a href="#4">4</a></div></td><td class="codeLine"><span class="keyword">class</span><span class="default">&nbsp;</span><span class="default">View</span></td></tr>
      <tr><td><div align="right"><a name="5"></a><a href="#5">5</a></div></td><td class="codeLine"><span class="keyword">{</span></td></tr>
-     <tr><td><div align="right"><a name="6"></a><a href="#6">6</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">protected</span><span class="default">&nbsp;</span><span class="default">$port</span><span class="keyword">;</span></td></tr>
+     <tr><td><div align="right"><a name="6"></a><a href="#6">6</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">protected</span><span class="default">&nbsp;</span><span class="default">$assignedVars</span><span class="default">&nbsp;</span><span class="keyword">=</span><span class="default">&nbsp;</span><span class="keyword">array</span><span class="keyword">(</span><span class="keyword">)</span><span class="keyword">;</span></td></tr>
      <tr><td><div align="right"><a name="7"></a><a href="#7">7</a></div></td><td class="codeLine"></td></tr>
-     <tr><td><div align="right"><a name="8"></a><a href="#8">8</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">public</span><span class="default">&nbsp;</span><span class="keyword">function</span><span class="default">&nbsp;</span><span class="default">setPort</span><span class="keyword">(</span><span class="default">$port</span><span class="keyword">)</span></td></tr>
+     <tr><td><div align="right"><a name="8"></a><a href="#8">8</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">public</span><span class="default">&nbsp;</span><span class="keyword">function</span><span class="default">&nbsp;</span><span class="default">assign</span><span class="keyword">(</span><span class="default">$name</span><span class="keyword">,</span><span class="default">&nbsp;</span><span class="default">$value</span><span class="keyword">)</span></td></tr>
      <tr><td><div align="right"><a name="9"></a><a href="#9">9</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">{</span></td></tr>
-     <tr class="success popin" data-title="1 test covers line 10" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;UnitTests\AbstractTest\AbstractTransportTest::testSetPortSetsTheDesiredPort&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="10"></a><a href="#10">10</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="default">-&gt;</span><span class="default">port</span><span class="default">&nbsp;</span><span class="keyword">=</span><span class="default">&nbsp;</span><span class="default">$port</span><span class="keyword">;</span></td></tr>
-     <tr class="success popin" data-title="1 test covers line 11" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;UnitTests\AbstractTest\AbstractTransportTest::testSetPortSetsTheDesiredPort&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="11"></a><a href="#11">11</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">}</span></td></tr>
-     <tr><td><div align="right"><a name="12"></a><a href="#12">12</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">public</span><span class="default">&nbsp;</span><span class="keyword">function</span><span class="default">&nbsp;</span><span class="default">getPort</span><span class="keyword">(</span><span class="keyword">)</span></td></tr>
-     <tr><td><div align="right"><a name="13"></a><a href="#13">13</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">{</span></td></tr>
-     <tr class="success popin" data-title="1 test covers line 14" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;UnitTests\AbstractTest\AbstractTransportTest::testSetPortSetsTheDesiredPort&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="14"></a><a href="#14">14</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">return</span><span class="default">&nbsp;</span><span class="default">$this</span><span class="default">-&gt;</span><span class="default">port</span><span class="keyword">;</span></td></tr>
-     <tr class="warning"><td><div align="right"><a name="15"></a><a href="#15">15</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">}</span></td></tr>
-     <tr><td><div align="right"><a name="16"></a><a href="#16">16</a></div></td><td class="codeLine"><span class="keyword">}</span></td></tr>
+     <tr class="success popin" data-title="1 test covers line 10" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;UnitTests\OutputTest\ControllerTest::testIndexIsOutputtingTheExpectedHtmlCodeForOurCustomUser&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="10"></a><a href="#10">10</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$this</span><span class="default">-&gt;</span><span class="default">assignedVars</span><span class="keyword">[</span><span class="default">$name</span><span class="keyword">]</span><span class="default">&nbsp;</span><span class="keyword">=</span><span class="default">&nbsp;</span><span class="default">$value</span><span class="keyword">;</span></td></tr>
+     <tr class="success popin" data-title="1 test covers line 11" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;UnitTests\OutputTest\ControllerTest::testIndexIsOutputtingTheExpectedHtmlCodeForOurCustomUser&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="11"></a><a href="#11">11</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">}</span></td></tr>
+     <tr><td><div align="right"><a name="12"></a><a href="#12">12</a></div></td><td class="codeLine"></td></tr>
+     <tr><td><div align="right"><a name="13"></a><a href="#13">13</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">public</span><span class="default">&nbsp;</span><span class="keyword">function</span><span class="default">&nbsp;</span><span class="default">render</span><span class="keyword">(</span><span class="default">$template</span><span class="keyword">)</span></td></tr>
+     <tr><td><div align="right"><a name="14"></a><a href="#14">14</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">{</span></td></tr>
+     <tr class="success popin" data-title="1 test covers line 15" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;UnitTests\OutputTest\ControllerTest::testIndexIsOutputtingTheExpectedHtmlCodeForOurCustomUser&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="15"></a><a href="#15">15</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="default">$view</span><span class="default">&nbsp;</span><span class="keyword">=</span><span class="default">&nbsp;</span><span class="default">$this</span><span class="default">-&gt;</span><span class="default">assignedVars</span><span class="keyword">;</span></td></tr>
+     <tr class="success popin" data-title="1 test covers line 16" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;UnitTests\OutputTest\ControllerTest::testIndexIsOutputtingTheExpectedHtmlCodeForOurCustomUser&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="16"></a><a href="#16">16</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">include_once</span><span class="default">&nbsp;</span><span class="default">dirname</span><span class="keyword">(</span><span class="default">__FILE__</span><span class="keyword">)</span><span class="default">&nbsp;</span><span class="keyword">.</span><span class="default">&nbsp;</span><span class="default">'/'</span><span class="default">&nbsp;</span><span class="keyword">.</span><span class="default">&nbsp;</span><span class="default">$template</span><span class="default">&nbsp;</span><span class="keyword">.</span><span class="default">&nbsp;</span><span class="default">'.inc.php'</span><span class="keyword">;</span></td></tr>
+     <tr class="success popin" data-title="1 test covers line 17" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;UnitTests\OutputTest\ControllerTest::testIndexIsOutputtingTheExpectedHtmlCodeForOurCustomUser&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="17"></a><a href="#17">17</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">}</span></td></tr>
+     <tr><td><div align="right"><a name="18"></a><a href="#18">18</a></div></td><td class="codeLine"><span class="keyword">}</span></td></tr>
 
     </tbody>
    </table>
