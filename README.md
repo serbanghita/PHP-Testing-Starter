@@ -339,6 +339,8 @@ variables and maintain their state across the execution of the script.
 
 ### Testing `Exceptions` and errors
 
+#### Annotations
+
 Unit testing usually starts by testing the exceptions and errors. If you have a method that throws three 
 different exceptions, and you are able to reach them one-by-one by mocking and testing you are almost done.
 
@@ -361,8 +363,14 @@ with unit tests.
 [`UsernameTest`]:tests/ExceptionsTest/UsernameTest.php
 [Domain-Driven design]:https://leanpub.com/ddd-in-php
 
-When you use the annotation, PHPUnit is simply expecting the test to throw an exception, not caring at what point in the test it happened. If you're using `setExpectedException()` you can easely debug your test and know exactly which error and where was thrown.
+#### `setExpectedException()`
 
+When you use the annotation, PHPUnit is simply expecting the test to throw an exception, not caring at what point in the test it happened. If you're using `setExpectedException('InvalidArgument', 'Invalid username.')` you can easely debug your test and know exactly which error and where was thrown.
+
+#### `try/catch`
+
+You can also test your code by using `try/catch` blocks inside your unit tests and placing `$this->fail('The test has failed.')` inside `catch` statement or outside - `$this->fail('Failed to throw exception')`.
+Normally you should try to reduce the amount of code in your tests and avoid using `try/catch`.
 
 ## Chapter 5
 > Show me the money!
