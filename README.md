@@ -42,7 +42,7 @@ If you want to contribute to this book, here are a couple of rules to which we a
  * Testing system specific functions (Serban/Bogdan)
     * Aliasing and namespacing (Serban)
     * Runkit, override_function (Bogdan)
- * Testing `Exceptions` and errors (Serban)
+ * [Testing `Exceptions` and errors](#testing-exceptions-and-errors) (Serban)
  * Testing a `Fluent` class (Serban)
 
 **Chapter 4** - _Code optimizations_
