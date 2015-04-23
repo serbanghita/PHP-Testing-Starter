@@ -384,7 +384,9 @@ Normally you should try to reduce the amount of code in your tests and avoid usi
 ### Funny
 
  * The 4-LOC µ [(mu) PHP Microframework]. Since it's really short code the author decided to [test] the mini framework with [`assert`] function from PHP.
+ * [Test::More] is the most popular library for writing tests in Perl. This is a PHP port that provides the same functionality and a similar interface.
 
 [(mu) PHP Microframework]:https://github.com/jeremeamia/mu
 [test]:https://github.com/jeremeamia/mu/blob/master/test.php
 [`assert`]:http://php.net/manual/en/function.assert.php
+[Test::More]:https://code.google.com/p/test-more-php/
