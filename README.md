@@ -35,7 +35,7 @@ If you want to contribute to this book, here are a couple of rules to which we a
 **Chapter 3** - _Testing special cases_ (Serban/Bogdan)
  * Testing `protected` and `private` methods (Bogdan)
  * Reading and writing `protected` and `private` attributes (Bogdan)
- * Testing methods using data providers (Serban)
+ * [Testing with data providers](#testing-with-data-providers)
  * [Testing `abstract` classes](#testing-abstract-classes) (Serban)
  * [Testing `static` variables, methods and `__callStatic`](#testing-static-in-classes) (Serban)
     * Running tests in isolation (Bogdan)
@@ -281,6 +281,16 @@ Congratulations! If you made it this far then you might as well think about star
 
 ## Chapter 3
 > Testing special cases
+
+### Testing with data providers
+
+When testing with large or specific sets of data via `@dataProvider` you might consider using distinct keys for your data sets. This can help you with the debugging. Even if you don't do this, you can still take advantage of testing one specific data set from a provider.
+
+Here is an example where `testAgents()` method is using a provider that has 100 items. Item with the index `10` fails and we want to debug the code against that specific data set: 
+
+```
+$ php phpunit.phar -c phpunit.xml.dist --testsuite IntegrationTests --filter "/::testAgents .*#10/"
+```
 
 ### Testing abstract classes
 
