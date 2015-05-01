@@ -382,6 +382,10 @@ When you use the annotation, PHPUnit is simply expecting the test to throw an ex
 You can also test your code by using `try/catch` blocks inside your unit tests and placing `$this->fail('The test has failed.')` inside `catch` statement or outside - `$this->fail('Failed to throw exception')`.
 Normally you should try to reduce the amount of code in your tests and avoid using `try/catch`.
 
+#### Isolating a failing test for debug
+
+One of the fastest ways to isolate a specific failing test is to mark it with `@group failing` and then run `phpunit` again with `--group failing`.
+
 ## Chapter 5
 > Show me the money!
 
