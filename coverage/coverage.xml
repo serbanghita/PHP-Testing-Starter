@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1429791913">
-  <project timestamp="1429791913">
-    <package name="UnitTests\AbstractTest">
-      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\tests/AbstractTest/AbstractTransport.php">
-        <class name="AbstractTransport" namespace="UnitTests\AbstractTest">
+<coverage generated="1430760820">
+  <project timestamp="1430760820">
+    <package name="Examples\AbstractClass">
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/AbstractClass/AbstractTransport.php">
+        <class name="AbstractTransport" namespace="Examples\AbstractClass">
           <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
         </class>
         <line num="8" type="method" name="setPort" crap="1" count="1"/>
@@ -14,12 +14,229 @@
         <metrics loc="15" ncloc="15" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
       </file>
     </package>
-    <file name="E:\webserver\www\git\test\PHP-Testing-Starter\tests/AbstractTest/TransportInterface.php">
+    <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/AbstractClass/TransportInterface.php">
       <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <package name="UnitTests\DependsMockTest">
-      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\tests/DependsMockTest/Product.php">
-        <class name="Product" namespace="UnitTests\DependsMockTest">
+    <package name="Examples\ApiClientMock">
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/ApiClientMock/AbstractMessage.php">
+        <class name="AbstractMessage" namespace="Examples\ApiClientMock">
+          <metrics methods="12" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="0" elements="48" coveredelements="0"/>
+        </class>
+        <line num="12" type="method" name="setStatusCode" crap="2" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="15" type="stmt" count="0"/>
+        <line num="17" type="method" name="getStatusCode" crap="2" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="19" type="stmt" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="22" type="method" name="setMethod" crap="2" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="27" type="method" name="getMethod" crap="2" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="32" type="method" name="setUrl" crap="2" count="0"/>
+        <line num="33" type="stmt" count="0"/>
+        <line num="34" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="37" type="method" name="getUrl" crap="2" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <line num="42" type="method" name="setHeaders" crap="2" count="0"/>
+        <line num="43" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="47" type="method" name="addHeader" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="49" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="52" type="method" name="removeHeader" crap="2" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="54" type="stmt" count="0"/>
+        <line num="55" type="stmt" count="0"/>
+        <line num="57" type="method" name="getHeaders" crap="2" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <line num="59" type="stmt" count="0"/>
+        <line num="60" type="stmt" count="0"/>
+        <line num="62" type="method" name="setBody" crap="2" count="0"/>
+        <line num="63" type="stmt" count="0"/>
+        <line num="64" type="stmt" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="67" type="method" name="getBody" crap="2" count="0"/>
+        <line num="68" type="stmt" count="0"/>
+        <line num="69" type="stmt" count="0"/>
+        <line num="70" type="stmt" count="0"/>
+        <metrics loc="70" ncloc="70" classes="1" methods="12" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="36" coveredstatements="0" elements="48" coveredelements="0"/>
+      </file>
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/ApiClientMock/ApiClient.php">
+        <class name="ApiClient" namespace="Examples\ApiClientMock">
+          <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="0" elements="17" coveredelements="0"/>
+        </class>
+        <line num="9" type="method" name="__construct" crap="2" count="0"/>
+        <line num="10" type="stmt" count="0"/>
+        <line num="11" type="stmt" count="0"/>
+        <line num="12" type="stmt" count="0"/>
+        <line num="13" type="stmt" count="0"/>
+        <line num="19" type="method" name="getPostById" crap="2" count="0"/>
+        <line num="20" type="stmt" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="27" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <metrics loc="30" ncloc="26" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="0" elements="17" coveredelements="0"/>
+      </file>
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/ApiClientMock/HttpClient.php">
+        <class name="HttpClient" namespace="Examples\ApiClientMock">
+          <metrics methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="0" elements="48" coveredelements="0"/>
+        </class>
+        <line num="15" type="method" name="request" crap="2" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <line num="18" type="stmt" count="0"/>
+        <line num="21" type="stmt" count="0"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="23" type="stmt" count="0"/>
+        <line num="24" type="stmt" count="0"/>
+        <line num="25" type="stmt" count="0"/>
+        <line num="26" type="stmt" count="0"/>
+        <line num="27" type="stmt" count="0"/>
+        <line num="28" type="stmt" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <line num="30" type="stmt" count="0"/>
+        <line num="32" type="stmt" count="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <line num="38" type="stmt" count="0"/>
+        <line num="39" type="stmt" count="0"/>
+        <line num="40" type="stmt" count="0"/>
+        <line num="41" type="stmt" count="0"/>
+        <line num="42" type="stmt" count="0"/>
+        <line num="44" type="stmt" count="0"/>
+        <line num="45" type="stmt" count="0"/>
+        <line num="47" type="method" name="response" crap="2" count="0"/>
+        <line num="48" type="stmt" count="0"/>
+        <line num="49" type="stmt" count="0"/>
+        <line num="50" type="stmt" count="0"/>
+        <line num="52" type="method" name="extractStatusFromResponseHeaders" crap="6" count="0"/>
+        <line num="53" type="stmt" count="0"/>
+        <line num="54" type="stmt" count="0"/>
+        <line num="56" type="stmt" count="0"/>
+        <line num="57" type="stmt" count="0"/>
+        <line num="58" type="stmt" count="0"/>
+        <line num="59" type="stmt" count="0"/>
+        <line num="61" type="stmt" count="0"/>
+        <line num="62" type="stmt" count="0"/>
+        <line num="64" type="method" name="extractHeadersFromResponseHeaders" crap="20" count="0"/>
+        <line num="65" type="stmt" count="0"/>
+        <line num="66" type="stmt" count="0"/>
+        <line num="68" type="stmt" count="0"/>
+        <line num="69" type="stmt" count="0"/>
+        <line num="70" type="stmt" count="0"/>
+        <line num="71" type="stmt" count="0"/>
+        <line num="72" type="stmt" count="0"/>
+        <line num="73" type="stmt" count="0"/>
+        <line num="74" type="stmt" count="0"/>
+        <line num="75" type="stmt" count="0"/>
+        <line num="77" type="stmt" count="0"/>
+        <line num="78" type="stmt" count="0"/>
+        <metrics loc="79" ncloc="67" classes="1" methods="4" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="44" coveredstatements="0" elements="48" coveredelements="0"/>
+      </file>
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/ApiClientMock/Request.php">
+        <class name="Request" namespace="Examples\ApiClientMock">
+          <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="7" coveredelements="0"/>
+        </class>
+        <line num="6" type="method" name="__construct" crap="2" count="0"/>
+        <line num="7" type="stmt" count="0"/>
+        <line num="8" type="stmt" count="0"/>
+        <line num="9" type="stmt" count="0"/>
+        <line num="10" type="stmt" count="0"/>
+        <line num="11" type="stmt" count="0"/>
+        <line num="12" type="stmt" count="0"/>
+        <metrics loc="14" ncloc="14" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="7" coveredelements="0"/>
+      </file>
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/ApiClientMock/Response.php">
+        <class name="Response" namespace="Examples\ApiClientMock">
+          <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="6" coveredelements="0"/>
+        </class>
+        <line num="6" type="method" name="__construct" crap="2" count="0"/>
+        <line num="7" type="stmt" count="0"/>
+        <line num="8" type="stmt" count="0"/>
+        <line num="9" type="stmt" count="0"/>
+        <line num="10" type="stmt" count="0"/>
+        <line num="11" type="stmt" count="0"/>
+        <metrics loc="11" ncloc="11" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="6" coveredelements="0"/>
+      </file>
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/ApiClientMock/Settings.php">
+        <class name="Settings" namespace="Examples\ApiClientMock">
+          <metrics methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+        </class>
+        <line num="8" type="method" name="set" crap="2" count="0"/>
+        <line num="9" type="stmt" count="0"/>
+        <line num="10" type="stmt" count="0"/>
+        <line num="11" type="stmt" count="0"/>
+        <line num="13" type="method" name="get" crap="6" count="0"/>
+        <line num="14" type="stmt" count="0"/>
+        <line num="15" type="stmt" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <metrics loc="16" ncloc="16" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="0" elements="8" coveredelements="0"/>
+      </file>
+    </package>
+    <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/ApiClientMock/ClientInterface.php">
+      <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/ApiClientMock/MessageInterface.php">
+      <metrics loc="19" ncloc="19" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/ApiClientMock/SettingsInterface.php">
+      <metrics loc="7" ncloc="7" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/ApiClientMock/demo.php">
+      <line num="2" type="stmt" count="0"/>
+      <line num="8" type="stmt" count="0"/>
+      <line num="9" type="stmt" count="0"/>
+      <line num="10" type="stmt" count="0"/>
+      <line num="11" type="stmt" count="0"/>
+      <line num="12" type="stmt" count="0"/>
+      <line num="13" type="stmt" count="0"/>
+      <line num="15" type="stmt" count="0"/>
+      <line num="16" type="stmt" count="0"/>
+      <line num="17" type="stmt" count="0"/>
+      <metrics loc="16" ncloc="16" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="9" coveredelements="0"/>
+    </file>
+    <package name="Examples\Depends">
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/Depends/Products.php">
+        <class name="Products" namespace="Examples\Depends">
+          <metrics methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="15" coveredelements="15"/>
+        </class>
+        <line num="6" type="method" name="__construct" crap="1" count="1"/>
+        <line num="8" type="stmt" count="1"/>
+        <line num="9" type="stmt" count="1"/>
+        <line num="11" type="method" name="add" crap="1" count="1"/>
+        <line num="13" type="stmt" count="1"/>
+        <line num="14" type="stmt" count="1"/>
+        <line num="16" type="method" name="remove" crap="1" count="1"/>
+        <line num="18" type="stmt" count="1"/>
+        <line num="19" type="stmt" count="1"/>
+        <line num="21" type="method" name="get" crap="3" count="3"/>
+        <line num="23" type="stmt" count="3"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="26" type="stmt" count="2"/>
+        <line num="29" type="method" name="getAll" crap="1" count="3"/>
+        <line num="31" type="stmt" count="3"/>
+        <metrics loc="32" ncloc="32" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="15" coveredelements="15"/>
+      </file>
+    </package>
+    <package name="Examples\DependsMock">
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/DependsMock/Product.php">
+        <class name="Product" namespace="Examples\DependsMock">
           <metrics methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="17" coveredelements="17"/>
         </class>
         <line num="10" type="method" name="__construct" crap="4" count="9"/>
@@ -41,16 +258,16 @@
         <line num="39" type="stmt" count="4"/>
         <metrics loc="40" ncloc="40" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="11" elements="17" coveredelements="17"/>
       </file>
-      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\tests/DependsMockTest/ProductFactory.php">
-        <class name="ProductFactory" namespace="UnitTests\DependsMockTest">
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/DependsMock/ProductFactory.php">
+        <class name="ProductFactory" namespace="Examples\DependsMock">
           <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
         </class>
         <line num="6" type="method" name="build" crap="1" count="5"/>
         <line num="7" type="stmt" count="5"/>
         <metrics loc="8" ncloc="8" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
       </file>
-      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\tests/DependsMockTest/Products.php">
-        <class name="Products" namespace="UnitTests\DependsMockTest">
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/DependsMock/Products.php">
+        <class name="Products" namespace="Examples\DependsMock">
           <metrics methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="25" coveredelements="25"/>
         </class>
         <line num="24" type="method" name="__construct" crap="1" count="3"/>
@@ -80,8 +297,8 @@
         <line num="64" type="stmt" count="1"/>
         <metrics loc="64" ncloc="51" classes="1" methods="6" coveredmethods="6" conditionals="0" coveredconditionals="0" statements="19" coveredstatements="19" elements="25" coveredelements="25"/>
       </file>
-      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\tests/DependsMockTest/ProductsManager.php">
-        <class name="ProductsManager" namespace="UnitTests\DependsMockTest">
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/DependsMock/ProductsManager.php">
+        <class name="ProductsManager" namespace="Examples\DependsMock">
           <metrics methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="11" coveredelements="11"/>
         </class>
         <line num="9" type="method" name="__construct" crap="1" count="2"/>
@@ -97,8 +314,8 @@
         <line num="26" type="stmt" count="1"/>
         <metrics loc="27" ncloc="27" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="8" elements="11" coveredelements="11"/>
       </file>
-      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\tests/DependsMockTest/Storage.php">
-        <class name="Storage" namespace="UnitTests\DependsMockTest">
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/DependsMock/Storage.php">
+        <class name="Storage" namespace="Examples\DependsMock">
           <metrics methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="6" coveredelements="0"/>
         </class>
         <line num="6" type="method" name="save" crap="2" count="0"/>
@@ -110,9 +327,9 @@
         <metrics loc="14" ncloc="14" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="0" elements="6" coveredelements="0"/>
       </file>
     </package>
-    <package name="UnitTests\DependsMultipleTest">
-      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\tests/DependsMultipleTest/Storage.php">
-        <class name="Storage" namespace="UnitTests\DependsMultipleTest">
+    <package name="Examples\DependsMultiple">
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/DependsMultiple/Storage.php">
+        <class name="Storage" namespace="Examples\DependsMultiple">
           <metrics methods="6" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="10" elements="18" coveredelements="15"/>
         </class>
         <line num="8" type="method" name="__construct" crap="2" count="4"/>
@@ -136,32 +353,9 @@
         <metrics loc="42" ncloc="42" classes="1" methods="6" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="10" elements="18" coveredelements="15"/>
       </file>
     </package>
-    <package name="UnitTests\DependsTest">
-      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\tests/DependsTest/Products.php">
-        <class name="Products" namespace="UnitTests\DependsTest">
-          <metrics methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="15" coveredelements="15"/>
-        </class>
-        <line num="6" type="method" name="__construct" crap="1" count="1"/>
-        <line num="8" type="stmt" count="1"/>
-        <line num="9" type="stmt" count="1"/>
-        <line num="11" type="method" name="add" crap="1" count="1"/>
-        <line num="13" type="stmt" count="1"/>
-        <line num="14" type="stmt" count="1"/>
-        <line num="16" type="method" name="remove" crap="1" count="1"/>
-        <line num="18" type="stmt" count="1"/>
-        <line num="19" type="stmt" count="1"/>
-        <line num="21" type="method" name="get" crap="3" count="3"/>
-        <line num="23" type="stmt" count="3"/>
-        <line num="24" type="stmt" count="1"/>
-        <line num="26" type="stmt" count="2"/>
-        <line num="29" type="method" name="getAll" crap="1" count="3"/>
-        <line num="31" type="stmt" count="3"/>
-        <metrics loc="32" ncloc="32" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="10" elements="15" coveredelements="15"/>
-      </file>
-    </package>
-    <package name="UnitTests\DependsWithProviderTest">
-      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\tests/DependsWithProviderTest/TextFormatter.php">
-        <class name="TextFormatter" namespace="UnitTests\DependsWithProviderTest">
+    <package name="Examples\DependsWithProvider">
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/DependsWithProvider/TextFormatter.php">
+        <class name="TextFormatter" namespace="Examples\DependsWithProvider">
           <metrics methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
         </class>
         <line num="6" type="method" name="eliminateWhiteSpaces" crap="1" count="2"/>
@@ -169,9 +363,43 @@
         <metrics loc="9" ncloc="9" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="1" elements="2" coveredelements="2"/>
       </file>
     </package>
-    <package name="UnitTests\ExceptionsTest">
-      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\tests/ExceptionsTest/MyClass.php">
-        <class name="MyClass" namespace="UnitTests\ExceptionsTest">
+    <package name="Examples\Doubles">
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/Doubles/Car.php">
+        <class name="Car" namespace="Examples\Doubles">
+          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+        </class>
+        <line num="8" type="method" name="__construct" crap="3" count="6"/>
+        <line num="10" type="stmt" count="6"/>
+        <line num="11" type="stmt" count="4"/>
+        <line num="14" type="stmt" count="2"/>
+        <line num="15" type="stmt" count="2"/>
+        <line num="17" type="method" name="setOwner" crap="1" count="1"/>
+        <line num="19" type="stmt" count="1"/>
+        <line num="20" type="stmt" count="1"/>
+        <metrics loc="21" ncloc="21" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
+      </file>
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/Doubles/Tire.php">
+        <class name="Tire" namespace="Examples\Doubles">
+          <metrics methods="4" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="5" elements="12" coveredelements="6"/>
+        </class>
+        <line num="8" type="method" name="__construct" crap="1" count="1"/>
+        <line num="10" type="stmt" count="1"/>
+        <line num="11" type="stmt" count="1"/>
+        <line num="12" type="stmt" count="1"/>
+        <line num="14" type="method" name="getPressure" crap="2" count="0"/>
+        <line num="16" type="stmt" count="0"/>
+        <line num="19" type="method" name="getMaker" crap="2.15" count="1"/>
+        <line num="21" type="stmt" count="1"/>
+        <line num="22" type="stmt" count="0"/>
+        <line num="24" type="stmt" count="1"/>
+        <line num="27" type="method" name="isValidMaker" crap="6" count="0"/>
+        <line num="29" type="stmt" count="0"/>
+        <metrics loc="31" ncloc="31" classes="1" methods="4" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="8" coveredstatements="5" elements="12" coveredelements="6"/>
+      </file>
+    </package>
+    <package name="Examples\Exceptions">
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/Exceptions/MyClass.php">
+        <class name="MyClass" namespace="Examples\Exceptions">
           <metrics methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="6" elements="9" coveredelements="7"/>
         </class>
         <line num="8" type="method" name="__construct" crap="2" count="2"/>
@@ -185,8 +413,8 @@
         <line num="22" type="stmt" count="1"/>
         <metrics loc="24" ncloc="24" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="7" coveredstatements="6" elements="9" coveredelements="7"/>
       </file>
-      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\tests/ExceptionsTest/Username.php">
-        <class name="Username" namespace="UnitTests\ExceptionsTest">
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/Exceptions/Username.php">
+        <class name="Username" namespace="Examples\Exceptions">
           <metrics methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="21" elements="28" coveredelements="28"/>
         </class>
         <line num="12" type="method" name="__construct" crap="1" count="12"/>
@@ -220,9 +448,9 @@
         <metrics loc="57" ncloc="57" classes="1" methods="7" coveredmethods="7" conditionals="0" coveredconditionals="0" statements="21" coveredstatements="21" elements="28" coveredelements="28"/>
       </file>
     </package>
-    <package name="UnitTests\OutputTest">
-      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\tests/OutputTest/Controller.php">
-        <class name="Controller" namespace="UnitTests\OutputTest">
+    <package name="Examples\Output">
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/Output/Controller.php">
+        <class name="Controller" namespace="Examples\Output">
           <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
         </class>
         <line num="9" type="method" name="__construct" crap="1" count="1"/>
@@ -235,8 +463,8 @@
         <line num="19" type="stmt" count="1"/>
         <metrics loc="20" ncloc="20" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="6" coveredstatements="6" elements="8" coveredelements="8"/>
       </file>
-      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\tests/OutputTest/Model.php">
-        <class name="Model" namespace="UnitTests\OutputTest">
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/Output/Model.php">
+        <class name="Model" namespace="Examples\Output">
           <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
         </class>
         <line num="8" type="method" name="setUsername" crap="1" count="1"/>
@@ -246,8 +474,8 @@
         <line num="15" type="stmt" count="1"/>
         <metrics loc="16" ncloc="16" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="5" coveredelements="5"/>
       </file>
-      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\tests/OutputTest/View.php">
-        <class name="View" namespace="UnitTests\OutputTest">
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/Output/View.php">
+        <class name="View" namespace="Examples\Output">
           <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
         </class>
         <line num="8" type="method" name="assign" crap="1" count="1"/>
@@ -260,10 +488,10 @@
         <metrics loc="17" ncloc="17" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
       </file>
     </package>
-    <file name="E:\webserver\www\git\test\PHP-Testing-Starter\tests/OutputTest/block.inc.php">
+    <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/Output/block.inc.php">
       <line num="5" type="stmt" count="1"/>
       <metrics loc="4" ncloc="4" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <metrics files="16" loc="396" ncloc="383" classes="14" methods="46" coveredmethods="43" conditionals="0" coveredconditionals="0" statements="112" coveredstatements="104" elements="158" coveredelements="147"/>
+    <metrics files="28" loc="717" ncloc="688" classes="22" methods="74" coveredmethods="46" conditionals="0" coveredconditionals="0" statements="247" coveredstatements="115" elements="321" coveredelements="161"/>
   </project>
 </coverage>

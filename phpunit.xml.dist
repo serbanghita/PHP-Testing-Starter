@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+        colors="true"
+        verbose="false"
+        bootstrap="tests/bootstrap.php"
+        convertErrorsToExceptions="true"
+        convertNoticesToExceptions="true"
+        convertWarningsToExceptions="true"
+        stopOnError="true"
+        stopOnFailure="true">
+
+    <testsuite name="All">
+        <directory suffix="Test.php">./tests/</directory>
+    </testsuite>
+    <testsuite name="AbstractClass">
+        <directory suffix="Test.php">./tests/AbstractClass/</directory>
+    </testsuite>
+    <testsuite name="ApiClientMock">
+        <directory suffix="Test.php">./tests/ApiClientMock/</directory>
+    </testsuite>
+    <testsuite name="Depends">
+        <directory suffix="Test.php">./tests/Depends/</directory>
+    </testsuite>
+    <testsuite name="DependsMock">
+        <directory suffix="Test.php">./tests/DependsMock/</directory>
+    </testsuite>
+    <testsuite name="DependsMultiple">
+        <directory suffix="Test.php">./tests/DependsMultiple/</directory>
+    </testsuite>
+    <testsuite name="DependsWithProvider">
+        <directory suffix="Test.php">./tests/DependsWithProvider/</directory>
+    </testsuite>
+    <testsuite name="Doubles">
+        <directory suffix="Test.php">./tests/Doubles/</directory>
+    </testsuite>
+    <testsuite name="Exceptions">
+        <directory suffix="Test.php">./tests/Exceptions/</directory>
+    </testsuite>
+    <testsuite name="Output">
+        <directory suffix="Test.php">./tests/Output/</directory>
+    </testsuite>
+
+
+
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./src</directory>
+            <exclude>
+                <directory suffix=".php">./vendor</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+
+    <logging>
+        <log type="coverage-html" target="coverage"/>
+        <log type="testdox-html" target="testdox.html"/>
+        <log type="testdox-text" target="testdox.txt"/>
+        <log type="coverage-clover" target="coverage/coverage.xml"/>
+    </logging>
+</phpunit>

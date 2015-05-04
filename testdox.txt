@@ -1,7 +1,7 @@
-UnitTests\AbstractTest\AbstractTransport
+UnitTests\AbstractClass\AbstractTransport
  [x] Set port sets the desired port
 
-UnitTests\DependsMockTest\ProductFactory
+UnitTests\DependsMock\ProductFactory
  [x] Building a new product with random array returns an instance of product
 
 UnitTests\DependsMockTest\ProductManager
@@ -9,42 +9,53 @@ UnitTests\DependsMockTest\ProductManager
  [x] Saving one specific product from the products list to the manager returns true
  [x] Saving one specific product with a non existent id from the products list to the manager throws an exception
 
-Product
+UnitTests\DependsMock\Product
  [x] Passing empty array to the constructor generates null valued product properties
  [x] Passing a non empty array to the constructor returns the expected values from getters
  [x] Setting a custom code is returned by get code
  [x] Setting a custom price is returned by get price
 
-UnitTests\DependsMockTest\Products
+UnitTests\DependsMock\Products
  [x] Adding a product to the list is found by get product by id
  [x] Adding multiple products using an empty array as a product list throws an exception
  [x] Adding multiple products to the existing product list works and the products are found by get product by id
  [x] Getting an existing product by an invalid id from the existing product list throws an exception
  [x] Reset prices resets all the prices to zero from the existing product list
 
-UnitTests\DependsMultipleTest\Storage
+UnitTests\DependsMultiple\Storage
  [x] Is empty returns true when the storage is initialized and has not items
  [x] Is empty returns false when after initializing the storage we add two valid keys
  [x] Is empty returns false when after initializing the storage we add three valid keys
  [x] Merging the two existing storages produces a new storage with all keys combined
 
-UnitTests\DependsTest\Products
+UnitTests\DependsWithProvider\TextFormatter
+ [x] Eliminate white spaces eliminates all white spaces from the provided texts
+ [x] Each item from texts provider has a non empty value in the output key
+ [x] Dynamic texts
+
+UnitTests\Depends\Products
  [x] Setting a valid array of products from constructor is returned by get all method
  [x] Adding a new product to the existing products array is returned by get method
  [x] Removing the first product from the products array is reflected by the get method
  [x] Getting a product by a key that no longer exists will return null
  [x] Getting a product by an empty key value will throw an exception
 
-UnitTests\DependsWithProviderTest\TextFormatter
- [x] Eliminate white spaces eliminates all white spaces from the provided texts
- [x] Each item from texts provider has a non empty value in the output key
- [x] Dynamic texts
+UnitTests\Doubles\Car
+ [x] Instantiating the constructor without passing a non empty string as a name to the constructor will trigger an exception
+ [x] Instantiating the constructor by passing a non empty string will set the name for the car
+ [x] Calling set owner requires that the input parameter should be an instance of owner
 
-MyClass
+UnitTests\Doubles\Tire
+ [x] Building a stub and passing the constructor arguments will store the values to the stub
+ [x] When mocking by ignoring the constructor then the attributes will not be set
+ [x] When mocking by using an extended object that overrides the behaviour then the value can be faked by the method definition
+ [x] When mocking by using mockery as a helper then protected methods can be faked
+
+UnitTests\Exceptions\MyClass
  [x] Instantiating the constructor with an empty string throws an exception
  [x] Instantiating the constructor with a number and calling check string will throw an exception
 
-Username
+UnitTests\Exceptions\Username
  [x] Setting a valid username will return the expected username string
  [x] Setting an empty username will throw an exception
  [x] Setting a short username will throw an exception
@@ -52,7 +63,6 @@ Username
  [x] Setting a username in an invalid format will throw an exception
  [x] Setting a username in an invalid format using a provider of usernames will throw an exception
 
-UnitTests\OutputTest\Controller
+UnitTests\Output\Controller
  [x] Index is outputting the expected html code for our custom user
- [x] Output
 

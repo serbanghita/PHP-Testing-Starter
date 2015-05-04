@@ -4,15 +4,15 @@
     <title></title>
   </head>
   <body>
-    <h2 id="UnitTests\AbstractTest\AbstractTransportTest">
-      UnitTests\AbstractTest\AbstractTransport
+    <h2 id="UnitTests\AbstractClass\AbstractTransportTest">
+      UnitTests\AbstractClass\AbstractTransport
     </h2>
     <ul>
       <li>Set port sets the desired port
       </li>
     </ul>
-    <h2 id="UnitTests\DependsMockTest\ProductFactoryTest">
-      UnitTests\DependsMockTest\ProductFactory
+    <h2 id="UnitTests\DependsMock\ProductFactoryTest">
+      UnitTests\DependsMock\ProductFactory
     </h2>
     <ul>
       <li>Building a new product with random array returns an instance of product
@@ -29,8 +29,8 @@
       <li>Saving one specific product with a non existent id from the products list to the manager throws an exception
       </li>
     </ul>
-    <h2 id="ProductTest">
-      Product
+    <h2 id="UnitTests\DependsMock\ProductTest">
+      UnitTests\DependsMock\Product
     </h2>
     <ul>
       <li>Passing empty array to the constructor generates null valued product properties
@@ -42,8 +42,8 @@
       <li>Setting a custom price is returned by get price
       </li>
     </ul>
-    <h2 id="UnitTests\DependsMockTest\ProductsTest">
-      UnitTests\DependsMockTest\Products
+    <h2 id="UnitTests\DependsMock\ProductsTest">
+      UnitTests\DependsMock\Products
     </h2>
     <ul>
       <li>Adding a product to the list is found by get product by id
@@ -57,8 +57,8 @@
       <li>Reset prices resets all the prices to zero from the existing product list
       </li>
     </ul>
-    <h2 id="UnitTests\DependsMultipleTest\StorageTest">
-      UnitTests\DependsMultipleTest\Storage
+    <h2 id="UnitTests\DependsMultiple\StorageTest">
+      UnitTests\DependsMultiple\Storage
     </h2>
     <ul>
       <li>Is empty returns true when the storage is initialized and has not items
@@ -70,8 +70,19 @@
       <li>Merging the two existing storages produces a new storage with all keys combined
       </li>
     </ul>
-    <h2 id="UnitTests\DependsTest\ProductsTest">
-      UnitTests\DependsTest\Products
+    <h2 id="UnitTests\DependsWithProvider\TextFormatterTest">
+      UnitTests\DependsWithProvider\TextFormatter
+    </h2>
+    <ul>
+      <li>Eliminate white spaces eliminates all white spaces from the provided texts
+      </li>
+      <li>Each item from texts provider has a non empty value in the output key
+      </li>
+      <li>Dynamic texts
+      </li>
+    </ul>
+    <h2 id="UnitTests\Depends\ProductsTest">
+      UnitTests\Depends\Products
     </h2>
     <ul>
       <li>Setting a valid array of products from constructor is returned by get all method
@@ -85,19 +96,32 @@
       <li>Getting a product by an empty key value will throw an exception
       </li>
     </ul>
-    <h2 id="UnitTests\DependsWithProviderTest\TextFormatterTest">
-      UnitTests\DependsWithProviderTest\TextFormatter
+    <h2 id="UnitTests\Doubles\CarTest">
+      UnitTests\Doubles\Car
     </h2>
     <ul>
-      <li>Eliminate white spaces eliminates all white spaces from the provided texts
+      <li>Instantiating the constructor without passing a non empty string as a name to the constructor will trigger an exception
       </li>
-      <li>Each item from texts provider has a non empty value in the output key
+      <li>Instantiating the constructor by passing a non empty string will set the name for the car
       </li>
-      <li>Dynamic texts
+      <li>Calling set owner requires that the input parameter should be an instance of owner
       </li>
     </ul>
-    <h2 id="MyClassTest">
-      MyClass
+    <h2 id="UnitTests\Doubles\TireTest">
+      UnitTests\Doubles\Tire
+    </h2>
+    <ul>
+      <li>Building a stub and passing the constructor arguments will store the values to the stub
+      </li>
+      <li>When mocking by ignoring the constructor then the attributes will not be set
+      </li>
+      <li>When mocking by using an extended object that overrides the behaviour then the value can be faked by the method definition
+      </li>
+      <li>When mocking by using mockery as a helper then protected methods can be faked
+      </li>
+    </ul>
+    <h2 id="UnitTests\Exceptions\MyClassTest">
+      UnitTests\Exceptions\MyClass
     </h2>
     <ul>
       <li>Instantiating the constructor with an empty string throws an exception
@@ -105,8 +129,8 @@
       <li>Instantiating the constructor with a number and calling check string will throw an exception
       </li>
     </ul>
-    <h2 id="UsernameTest">
-      Username
+    <h2 id="UnitTests\Exceptions\UsernameTest">
+      UnitTests\Exceptions\Username
     </h2>
     <ul>
       <li>Setting a valid username will return the expected username string
@@ -122,13 +146,11 @@
       <li>Setting a username in an invalid format using a provider of usernames will throw an exception
       </li>
     </ul>
-    <h2 id="UnitTests\OutputTest\ControllerTest">
-      UnitTests\OutputTest\Controller
+    <h2 id="UnitTests\Output\ControllerTest">
+      UnitTests\Output\Controller
     </h2>
     <ul>
       <li>Index is outputting the expected html code for our custom user
-      </li>
-      <li>Output
       </li>
     </ul>
   </body>
