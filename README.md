@@ -25,7 +25,7 @@ If you want to contribute to this book, here are a couple of rules to which we a
  * [Running the first test](#running-the-first-test)
 
 **Chapter 2** - _Start testing/Show me the code!_ (Bogdan)
- * Testing by stubbing methods
+ * Testing using test doubles
  * Methods of mocking
     * With PHPUnit (Serban/Bogdan)
     * With `extends` via fixtures
@@ -278,6 +278,12 @@ Congratulations! If you made it this far then you might as well think about star
 [composer.phar]:https://getcomposer.org/composer.phar
 [phpunit.phar]:https://phar.phpunit.de/phpunit.phar
 [possible composer issues]:#aaa
+
+## Chapter 2
+
+### Testing using test doubles
+
+
 
 ## Chapter 3
 > Testing special cases
