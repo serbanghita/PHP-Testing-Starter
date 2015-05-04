@@ -1,6 +1,9 @@
 UnitTests\AbstractClass\AbstractTransport
  [x] Set port sets the desired port
 
+UnitTests\ApiClientMock\ApiClient
+ [ ] Get post by id returns a complete request when the request was successful
+
 UnitTests\DependsMock\ProductFactory
  [x] Building a new product with random array returns an instance of product
 

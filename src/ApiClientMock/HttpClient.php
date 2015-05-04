@@ -3,10 +3,13 @@ namespace Examples\ApiClientMock;
 
 class HttpClient implements ClientInterface
 {
+    protected $settings;
     protected $request;
     protected $response;
 
-    public function __construct() {}
+    public function __construct(Settings $settings) {
+        $this->settings = $settings;
+    }
 
     /**
      * @param MessageInterface $request
@@ -23,8 +26,8 @@ class HttpClient implements ClientInterface
                 'method' => $request->getMethod(),
                 'header' => implode("\r\n", $request->getHeaders()),
                 'user_agent' => 'Testing Client 1.0',
-                'proxy' => 'tcp://proxy.avangate.local:8080',
-                'request_fulluri' => true,
+                'proxy' => $this->settings->get('proxy'),
+                'request_fulluri' => $this->settings->get('request_fulluri'),
                 'content' => $request->getBody()
             )
         );

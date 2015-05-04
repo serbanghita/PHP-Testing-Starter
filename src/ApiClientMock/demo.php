@@ -6,10 +6,15 @@ use Examples\ApiClientMock\HttpClient;
 use Examples\ApiClientMock\ApiClient;
 
 $settings = new Settings();
+    $settings->set('proxy', 'tcp://proxy.avangate.local:8080');
+    $settings->set('request_fulluri', true);
+$httpClient = new HttpClient($settings);
+
+$settings = new Settings();
     $settings->set('url', 'http://jsonplaceholder.typicode.com');
     $settings->set('token', 'whatever');
-$httpClient = new HttpClient();
 $client = new ApiClient($settings, $httpClient);
+
 $response = $client->getPostById(1);
 
 var_dump($response->getStatusCode());
