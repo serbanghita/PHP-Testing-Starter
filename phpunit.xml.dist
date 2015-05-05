@@ -39,7 +39,12 @@
     <testsuite name="Output">
         <directory suffix="Test.php">./tests/Output/</directory>
     </testsuite>
-
+    <testsuite name="ProtectedProperties">
+        <directory suffix="Test.php">./tests/ProtectedProperties/</directory>
+    </testsuite>
+    <testsuite name="Spy">
+        <directory suffix="Test.php">./tests/Spy/</directory>
+    </testsuite>
 
 
     <filter>
