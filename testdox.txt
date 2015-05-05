@@ -69,3 +69,10 @@ UnitTests\Exceptions\Username
 UnitTests\Output\Controller
  [x] Index is outputting the expected html code for our custom user
 
+UnitTests\ProtectedProperties\MyClass
+ [x] Map product returns the expected product string
+ [x] Map category returns the expected product string
+
+UnitTests\Spy\Logger
+ [x] Test the number of invocations
+

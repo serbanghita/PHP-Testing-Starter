@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1430761819">
-  <project timestamp="1430761819">
+<coverage generated="1430816415">
+  <project timestamp="1430816415">
     <package name="Examples\AbstractClass">
       <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/AbstractClass/AbstractTransport.php">
         <class name="AbstractTransport" namespace="Examples\AbstractClass">
@@ -498,6 +498,21 @@
       <line num="5" type="stmt" count="1"/>
       <metrics loc="4" ncloc="4" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
     </file>
-    <metrics files="28" loc="725" ncloc="696" classes="22" methods="75" coveredmethods="46" conditionals="0" coveredconditionals="0" statements="252" coveredstatements="115" elements="327" coveredelements="161"/>
+    <package name="Examples\ProtectedProperties">
+      <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/ProtectedProperties/MyClass.php">
+        <class name="MyClass" namespace="Examples\ProtectedProperties">
+          <metrics methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+        </class>
+        <line num="6" type="method" name="mapProduct" crap="1" count="1"/>
+        <line num="8" type="stmt" count="1"/>
+        <line num="11" type="method" name="mapCategory" crap="1" count="1"/>
+        <line num="13" type="stmt" count="1"/>
+        <metrics loc="14" ncloc="14" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="4" coveredelements="4"/>
+      </file>
+    </package>
+    <file name="E:\webserver\www\git\test\PHP-Testing-Starter\src/Spy/LoggerInterface.php">
+      <metrics loc="97" ncloc="22" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
+    </file>
+    <metrics files="30" loc="836" ncloc="732" classes="23" methods="77" coveredmethods="48" conditionals="0" coveredconditionals="0" statements="254" coveredstatements="117" elements="331" coveredelements="165"/>
   </project>
 </coverage>
