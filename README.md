@@ -21,6 +21,7 @@ If you want to contribute to this book, here are a couple of rules to which we a
 **Chapter 1** - _Setting up your project_ (Serban)
  * [Initial set-up](#initial-set-up)
  * [Files and folders explained](#files-and-folders-explained)
+    * [PHPUnit Configuration tips and tricks](#phpunit-configuration-tips-and-tricks)
  * [Downloading needed tools](#downloading-needed-tools)
  * [Running the first test](#running-the-first-test)
 
@@ -242,6 +243,19 @@ important for our project to work.
     }
   }
 }
+```
+
+#### PHPUnit Configuration tips and tricks
+
+If you want to inject some global variables straight in your tests, you can do this by using a `<php>` block and later get the variables in your tests like this `getenv('TOKEN')`:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+  <phpunit>
+    <var name="TOKEN" value="my secret token">
+    <var name="PATH_TO_FILES" value="path/to/files">
+  </phpunit>
+</xml>
 ```
 
 ### Downloading needed tools
